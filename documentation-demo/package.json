@@ -6,7 +6,9 @@
   "scripts": {
     "start": "c8ycli server",
     "build": "c8ycli build",
-    "deploy": "c8ycli deploy"
+    "deploy": "c8ycli deploy",
+    "generate-docs": "npx compodoc -p tsconfig.json src --output dist/documentation",
+    "deploy-docs": "cp cumulocity.doc.json dist/documentation/cumulocity.json && c8ycli deploy -u https://gcc.eu-latest.cumulocity.com ./dist/documentation"
   },
   "keywords": [],
   "author": "",
@@ -34,8 +36,9 @@
     "@angular-devkit/build-angular": "0.803.23",
     "@angular/compiler-cli": "8.2.13",
     "@angular/language-service": "8.2.13",
-    "typescript": "3.5.3",
-    "@c8y/cli": "1006.6.26"
+    "@c8y/cli": "1006.6.26",
+    "@compodoc/compodoc": "^1.1.11",
+    "typescript": "3.5.3"
   },
   "c8y": {
     "application": {

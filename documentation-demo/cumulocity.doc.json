@@ -1,0 +1,11 @@
+{
+    "name": "Demo Docs",
+    "version": "1.0.0",
+    "contextPath": "documentation-demo",
+    "key": "documentation-demo-key",
+    "contentSecurityPolicy": "base-uri 'none'; default-src 'self' 'unsafe-inline' http: https: ws: wss:; connect-src 'self' *.billwerk.com http: https: ws: wss:;  script-src 'self' open.mapquestapi.com *.twitter.com *.twimg.com 'unsafe-inline' 'unsafe-eval' data:; style-src * 'unsafe-inline' blob:; img-src * data:; font-src * data:; frame-src *;",
+    "icon": {
+      "class": "c8y-icon-duocolor c8y-icon-book"
+    }
+  }
+  
